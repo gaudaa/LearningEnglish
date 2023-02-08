@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-image: linear-gradient(rgb(75, 187, 247), rgb(241, 250, 255));
+    display: flex;
+    flex-direction: column;
+
+}
+.dywl{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dyw{
+    display: flex;
+    gap: 50px;
+}
+.yes{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yes :hover{
+    width: 1000px;
+    font-size: 500px;
+    color: yellow;
+}
+.yesa{
+    border: none;
+    font-size: 300px;
+    color: yellow;
+    width: 700px;
+    border-radius: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: black 10px 10px;
+}
+.learning{
+    display: flex;
+    gap: 50px;
+}
+.d,.o,.y,.o,.u,.w,.a,.n,.t,.l,.e,.a,.r,.n,.i,.n,.g,.as{
+    /* box-shadow: black 10px 10px 10px 10px; */
+    color: rgb(242, 255, 0);
+    font-size: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: black 10px 10px;
+}
