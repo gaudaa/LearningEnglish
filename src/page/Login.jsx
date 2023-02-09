@@ -5,6 +5,7 @@ import '../firebase'
 
 export const Login = () => {
     const navigate = useNavigate();
+    
     const [code, setCode] = useState('')
     const [number, setNumber] = useState('')
 
