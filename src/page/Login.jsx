@@ -15,10 +15,6 @@ export const Login = () => {
     auth.languageCode = 'mn'
 
 
-    
-
-    
-
 
 useEffect(() => {
 
