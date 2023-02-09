@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import {Home} from './page/home/home.jsx'
 import { Navigationcontainer } from "./page/navigationcontainer.jsx";
 import { Test } from "./page/test/test.jsx";
+import { Login } from "./page/Login";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="" element={<Navigate to="home"/>}></Route>
           <Route path="home" element={<Home/>}></Route>
           <Route path="test" element={<Test/>}></Route>
+          <Route path="login" element={<Login/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
