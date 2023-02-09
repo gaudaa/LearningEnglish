@@ -30,19 +30,16 @@ const codeAwah = async() => {
     confirmationResult.current = await signInWithPhoneNumber(auth, phoneNumber, appVerifier);
     console.log(number);
     setNumber('');
-  
 }
 
 
 const Submit = async() => {
 
   console.log(await confirmationResult.current.confirm(code));
-  navigate('/home')   
-  
+  navigate('/home')
 }
 
     return (
-      
       <div style={css.main}>
         <input placeholder="phone number" onChange={(e)=> setNumber(e.target.value)} ></input>
         <button onClick={codeAwah}> Code awah</button>
@@ -50,7 +47,7 @@ const Submit = async() => {
         <button onClick={Submit} > Submit </button>
         <div id="recaptcha-container"></div>
       </div>
-    ) 
+    )
   }
 
 
@@ -64,6 +61,5 @@ const Submit = async() => {
       height: '100vh',
       width: '100%',
       background:"linear-gradient(45deg, lightskyblue, blue)",
-      
     }
   }
