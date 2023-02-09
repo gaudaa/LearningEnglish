@@ -3,10 +3,8 @@
     padding: 0;
 }
 .body{
-    background-image: linear-gradient(rgb(75, 187, 247), rgb(241, 250, 255));
     display: flex;
     flex-direction: column;
-
 }
 .dywl{
     height: 1000px;
@@ -14,13 +12,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(./wp10192922-people-talking-wallpapers.jpg);
+    background-size: 100%;
 }
 .dyw{
     display: flex;
     gap: 50px;
 }
 .yes{
-    height: 1000px;
+    height: 1050px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,6 @@
     gap: 50px;
 }
 .d,.o,.y,.o,.u,.w,.a,.n,.t,.l,.e,.a,.r,.n,.i,.n,.g,.as{
-    /* box-shadow: black 10px 10px 10px 10px; */
     color: rgb(242, 255, 0);
     font-size: 300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
