@@ -6,7 +6,7 @@ export const Header = () => {
         <div className="header">
             <Link to="home" style={{textDecoration: 'none'}}><h1 className='logo'>Logo</h1></Link>
             <div className='logsign'>
-                <button className='log'>Login</button>
+                <Link to="login"><button className='log'>Login</button></Link>
                 <button className='sign'>Sign up</button>
             </div>
         </div>
