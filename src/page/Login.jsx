@@ -1,6 +1,6 @@
 import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState, useRef } from 'react'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import '../firebase'
 
 export const Login = () => {
@@ -46,7 +46,7 @@ const Submit = async() => {
         <input placeholder="phone number" onChange={(e)=> setNumber(e.target.value)} ></input>
         <button onClick={codeAwah}> Code awah</button>
         <input placeholder="code" onChange={(e)=> setCode(e.target.value)} ></input>
-        <button onClick={Submit} > Submit </button>
+        <Link to={'/test'}><button onClick={Submit} > Submit </button></Link>
         <div id="recaptcha-container"></div>
       </div>
     )
