@@ -3,6 +3,7 @@ import {Home} from './page/home/home.jsx'
 import { Navigationcontainer } from "./page/navigationcontainer.jsx";
 import { Test } from "./page/test/test.jsx";
 import { Login } from "./page/Login";
+import { Profile } from "./page/profile/profile.jsx";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="home" element={<Home/>}></Route>
           <Route path="test" element={<Test/>}></Route>
           <Route path="login" element={<Login/>}></Route>
+          <Route path="profile" element={<Profile/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.profile{
+    margin-top: 50px;
+}
+.about{
+    width: 500px ;
+    height: 850px;
+    border: solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.prof{
+    display: flex;
+    align-items: center;
+    width: 470px;
+    height: 206px;
+    border: solid;
+    justify-content: space-around;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: solid;
+}
+.name{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.ner{
+    font-size: 40px;
+}
+
+
+/* proft2 */
+
+.prof2{
+    width: 470px;
+    height: 580px;
+    border: solid;
+}
