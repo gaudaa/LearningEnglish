@@ -1,5 +1,6 @@
 import "./test.css"
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 
 
 export const Test = () => {
@@ -85,7 +86,7 @@ export const Test = () => {
         <div className="main">
             {showScore?(
                 <>
-                <button className="finish"> <b>Finish</b></button>
+                <Link to={'/profile'}><button className="finish"> <b>Finish</b></button></Link>
                 </>
             ):
                 <div className="text">
