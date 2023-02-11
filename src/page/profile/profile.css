@@ -4,46 +4,201 @@
 }
 .profile{
     margin-top: 50px;
-}
-.about{
-    width: 500px ;
-    height: 850px;
-    border: solid;
-    padding: 20px;
+    width: 100%;
+    height: 95vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-image: url(../background.jpg);
+    background-size: 100% 100vh;
+    gap: 10px;
 }
-.prof{
+
+
+.pg{
+    margin-top: 20px;
+    width: 600px;
+    height: 910px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+
+
+
+/* about */
+.about{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.241);
+    border: none;
+    border-radius: 40px;
+    padding: 30px;
     display: flex;
     align-items: center;
-    width: 470px;
-    height: 206px;
-    border: solid;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.img{
+.imge{
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    border: solid;
+    background-image: url(./eaec3c6417db4eb53ac0beafc9a7051b.jpg);
+    background-size: 200px 200px;
+    border: none;
 }
-.name{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.ner{
+.namee{
+    color: white;
     font-size: 40px;
 }
+.abo{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    gap: 10px;
+}
+.phone{
+    width: 25px;
+    height: 25px;
+    background-image: url(./icons8-phone-50.png);
+    background-size: 25px 25px;
+}
+.numbe{
+    color: white;
+    font-size: 25px;
+}
+
+.emai{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 10px;
+}
+.mai{
+    width: 25px;
+    height: 25px;
+    background-image: url(./icons8-mail-50.png);
+    background-size: 25px 25px;
+}
+.mail{
+    color: white;
+    font-size: 25px;
+}
 
 
-/* proft2 */
 
-.prof2{
-    width: 470px;
-    height: 580px;
-    border: solid;
+/* account lvl */
+.level{
+    width: 350px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.241);
+    border: none;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aclvl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.acc{
+    font-size: 40px;
+    color: white;
+}
+.nxp{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.naim{
+    color: white;
+    font-size: 20px;
+}
+.axp{
+    color: white;
+    font-size: 20px;
+}
+.grap{
+    background-color: rgba(255, 255, 255, 0.329);
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+.grapa{
+    background-color: rgba(255, 255, 255, 0.569);
+    width: 240px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+/* word lvl */
+.wclvl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.word{
+    font-size: 40px;
+    color: white;
+}
+.wxp{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.aa{
+    color: white;
+    font-size: 20px;
+}
+.dxp{
+    color: white;
+    font-size: 20px;
+}
+.wrap{
+    background-color: rgba(255, 255, 255, 0.329);
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+.wrapa{
+    background-color: rgba(255, 255, 255, 0.569);
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+
+/* set of words */
+.sets{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.241);
+    border: none;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.ys{
+    color: white;
+    font-size: 30px;
+}
+.setss{
+    width: 240px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.524);
+    border-radius: 20px;
 }
