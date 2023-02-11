@@ -84,23 +84,25 @@ export const Test = () => {
 
     return(
         <div className="main">
-            {showScore?(
-                <>
-                <Link to={'/profile'}><button className="finish"> <b>Finish</b></button></Link>
-                </>
-            ):
-                <div className="text">
-                    <p className="p"><b>{Questionbank[currentQuestion].Question}</b></p>
-                    <div className="answer">
-                        {
-                            Questionbank[currentQuestion].Answers.map((answer, i) =>
-                            (
-                                <button className="pt2" key={i} onClick={() => handleAnswerResponse(answer.isCorrect)}>{answer.Answer}</button>
-                            ))
-                        }
+            <div className="maind">
+                {showScore?(
+                    <>
+                    <Link to={'/profile'}><button className="finish"> <b>Finish</b></button></Link>
+                    </>
+                ):
+                    <div className="text">
+                        <p className="p"><b>{Questionbank[currentQuestion].Question}</b></p>
+                        <div className="answer">
+                            {
+                                Questionbank[currentQuestion].Answers.map((answer, i) =>
+                                (
+                                    <button className="pt2" key={i} onClick={() => handleAnswerResponse(answer.isCorrect)}>{answer.Answer}</button>
+                                ))
+                            }
+                        </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
     )
 }
