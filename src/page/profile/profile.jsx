@@ -4,7 +4,7 @@ export const Profile = () => {
         <div className="profile">
             <div className='pg'>
                 <div className="about">
-                    <input className='imge' type={Image}></input>
+                    <div className='imge'></div>
                     <p className='namee'>Doflamingo Donquixote</p>
                     <div className='abo'>
                         <div className='phone'></div>
