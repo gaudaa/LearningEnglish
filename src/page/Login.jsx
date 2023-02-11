@@ -2,6 +2,7 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, onAuthStateChanged }
 import { useEffect, useState, useRef } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import '../firebase'
+import "./login.css"
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -42,26 +43,55 @@ const Submit = async() => {
 }
 
     return (
-      <div style={css.main}>
-        <input placeholder="phone number" onChange={(e)=> setNumber(e.target.value)} ></input>
-        <button onClick={codeAwah}> Code awah</button>
-        <input placeholder="code" onChange={(e)=> setCode(e.target.value)} ></input>
-        <Link to={'/test'}><button onClick={Submit} > Submit </button></Link>
-        <div id="recaptcha-container"></div>
+      <div className="main">
+        <div className="logb">
+          <div className="signd">
+            <p className="signl">Sign up</p>
+            <p className="tet">Login to manage your account</p>
+          </div>
+          <div className="numcode">
+            <div>
+              <input
+                className="num"
+                placeholder="phone number"
+                onChange={(e)=> setNumber(e.target.value)}
+                ></input>
+              <button
+                className="numb"
+                onClick={codeAwah}
+                >
+                Sent
+              </button>
+            </div>
+            <div>
+              <input
+                className="code"
+                placeholder="code"
+                onChange={(e)=> setCode(e.target.value)}
+                ></input>
+              <Link to={'/test'}>
+                <button
+                  className="codeb"
+                  onClick={Submit}
+                  >
+                  Submit
+                </button>
+              </Link>
+            </div>
+            <div className="check">
+              <input className="checkbox" type={"checkbox"}></input>
+              <p className="rem">Remember me</p>
+            </div>
+          </div>
+          <div id="recaptcha-container"></div>
+        </div>
+        <div className="dcf">
+          <div className="dontc">
+            <p className="dont">Don't have an account? </p>
+            <p className="create">Create your account?</p>
+          </div>
+          <p className="forgot">Forgot password?</p>
+        </div>
       </div>
     )
-  }
-
-
-  const css = {
-
-    main: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-      width: '100%',
-      background:"linear-gradient(45deg, lightskyblue, blue)",
-    }
   }
